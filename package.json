@@ -11,6 +11,8 @@
     "mongoose": "~3.6.2",
     "morgan": "~1.2.2",
     "vue": "^1.0.16",
-    "vue-resource": "^0.7.0"
+    "vue-resource": "^0.7.0",
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "rollup-plugin-babel": "^2.3.9"
   }
 }

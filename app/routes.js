@@ -1,6 +1,6 @@
-var Todo = require('./models/todo');
+import Todo from './models/todo'
 
-module.exports = function(app) {
+export function routes(app) {
   
   // api -----------------------------------------------------------------------
   // get all todos

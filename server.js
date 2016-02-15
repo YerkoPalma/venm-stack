@@ -1,7 +1,7 @@
 // server.js
 
   // set up ====================================================================
-  var express         = require('express');
+  import express from 'express'
   var app             = express();                    // create our app w/ express
   var mongoose        = require('mongoose');          // mongoose for mongodb
   var morgan          = require('morgan');            // log requests to the console (express4)
@@ -11,7 +11,8 @@
   var port            = process.env.PORT || 8080;
   var ip              = process.env.IP || "127.0.0.1";
   var environment     = process.env.NODE_ENV || "development";
-  var database        = require('./config/database');
+  import database from './config/database'
+  import {routes} from './app/routes'
 
   // configuration =============================================================
 
@@ -24,7 +25,7 @@
   app.use(methodOverride());
   
   // routes ====================================================================
-  require('./app/routes')(app);
+  routes(app);
   
   // listen (start app with node server.js) ====================================
   app.set('port', port);
