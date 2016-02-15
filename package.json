@@ -1,0 +1,16 @@
+{
+  "name": "node-todo-venm",
+  "version": "0.0.0",
+  "description": "Simple todo application with Venm stack",
+  "main": "server.js",
+  "author": "Yerko",
+  "dependencies": {
+    "body-parser": "~1.5.2",
+    "express": "~4.7.2",
+    "method-override": "~2.1.2",
+    "mongoose": "~3.6.2",
+    "morgan": "~1.2.2",
+    "vue": "^1.0.16",
+    "vue-resource": "^0.7.0"
+  }
+}
